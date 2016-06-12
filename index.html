@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Bootstrap Website</title>
+		<!--css file and bootstrap--->
+		<link href="css/bootstrap.min.css" rel="stylesheet"/>
+		<link href="css/style.css" rel="stylesheet"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div class="navbar navbar-inverse navbar-static-top">
+			<div class="container">
+				<a href="#" class="navbar-brand">Bootstrap Website</a>
+				
+				<!--Create button for navigation bar for mobile view--->
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+				<!--hamburger icon-->
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<!--Create navigation-->
+				<div class="collapse navbar-collapse navHeaderCollapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="index2.html">Blog</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Social Media <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Facebook</a></li>
+								<li><a href="#">Twitter</a></li>
+								<li><a href="#">Instagram</a></li>
+								<li><a href="#">Snapchat</a></li>
+								<li><a href="#">Google+</a></li>
+								<li><a href="#">Tumblr</a></li>
+							</ul>
+						</li>
+						<li><a href="#">About</a></li>
+						<!--This for modal window--->
+						<li><a href="#contact" data-toggle="modal">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!---Create latest news box-->
+		<div class="container">
+			<div class="jumbotron">
+				<center><h1>Hello, World</h1>
+				<p>This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site.</p>
+				<a class="btn btn-default">Watch now</a>
+				<a class="btn btn-info">Tweet it</a></center>
+			</div>
+		</div>
+		
+		<!---Responsive grid system-->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<h3><a href="#">Content one</a></h3>
+					<p>This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site.</p>
+					<a href="#" class="btn btn-default">Read More</a>
+				</div>
+				<div class="col-md-3">
+					<h3><a href="#">Content two</a></h3>
+					<p>This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site.</p>
+					<a href="#" class="btn btn-default">Read More</a>
+				</div>
+				<div class="col-md-3">
+					<h3><a href="#">Content three</a></h3>
+					<p>This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site.</p>
+					<a href="#" class="btn btn-default">Read More</a>
+				</div>
+				<div class="col-md-3">
+					<h3><a href="#">Content four</a></h3>
+					<p>This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site. This is bootstrap site.</p>
+					<a href="#" class="btn btn-default">Read More</a>
+				</div>
+			</div>
+		</div>
+		
+		<!--Create stick footer navigation-->
+		<div class="navbar navbar-default navbar-fixed-bottom">
+			<div class="container">
+				<p class="navbar-text pull-left">Developed by Edward Jones</p>
+				<a class="navbar-btn btn-danger btn pull-right">License by Katelyn Ray</a>
+			</div>
+		</div>
+		
+		<!--Modal window for #contact navigation-->
+		<!--id value must match contact id above--->
+		<div class="modal fade" id="contact" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<!--header--->
+					<!---create form-->
+					<form class="form-horizontal">
+						<div class="modal-header">
+							<h4>Contact my team:</h4>
+						</div>
+						<!--body-->
+						<div class="modal-body">
+							<!---form-group is one horizontal group-->
+							<div class="form-group">
+								<label for="contact-name" class="col-lg-2 control-label">Name:</label>
+								<div class="col-lg-10">
+									<input type="text" class="form-control" id="contact-name" placeholder="Enter your full name">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="contact-email" class="col-lg-2 control-label">Email:</label>
+								<div class="col-lg-10">
+									<input type="email" class="form-control" id="contact-email" placeholder="you@example.com">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="contact-msg" class="col-lg-2 control-label">Message:</label>
+								<div class="col-lg-10">
+									<textarea class="form-control" rows="8"></textarea>
+								</div>
+							</div>
+						</div>
+						<!---footer-->
+						<div class="modal-footer">
+							<a class="btn btn-default" data-dismiss="modal">Close</a>
+							<button class="btn btn-primary" type="submit">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<!--javascript files and library-->
+		<script src="js/lib/jquery-2.2.4.min.js"></script>
+		<script src="js/lib/bootstrap.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
